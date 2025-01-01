@@ -11,3 +11,7 @@ __pycache__/
 
 #ignore macOS files
 .DS_Store
+
+# venv
+mon_venv/
+data-driven-prediction-of-battery-cycle-life-before-capacity-degradation/
