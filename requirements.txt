@@ -6,6 +6,7 @@ attrs==24.3.0
 category-encoders==2.6.4
 certifi==2024.12.14
 charset-normalizer==3.4.1
+cloudpickle==3.1.0
 comm==0.2.2
 contourpy==1.3.1
 cycler==0.12.1
@@ -21,6 +22,7 @@ google-pasta==0.2.0
 grpcio==1.68.1
 h5py==3.12.1
 idna==3.10
+imageio==2.36.1
 ipykernel==6.29.5
 ipython==8.31.0
 jedi==0.19.2
@@ -31,7 +33,9 @@ jupyter_client==8.6.3
 jupyter_core==5.7.2
 keras==3.7.0
 kiwisolver==1.4.8
+lazy_loader==0.4
 libclang==18.1.1
+llvmlite==0.43.0
 Markdown==3.7
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
@@ -42,6 +46,8 @@ ml-dtypes==0.4.1
 namex==0.0.8
 nbformat==5.10.4
 nest-asyncio==1.6.0
+networkx==3.4.2
+numba==0.60.0
 numpy==2.0.2
 opt_einsum==3.4.0
 optree==0.13.1
@@ -68,10 +74,13 @@ requests==2.32.3
 rich==13.9.4
 rpds-py==0.22.3
 scikeras==0.13.0
+scikit-image==0.25.0
 scikit-learn==1.5.2
 scipy==1.14.1
 seaborn==0.13.2
+shap==0.46.0
 six==1.17.0
+slicer==0.0.8
 stack-data==0.6.3
 statsmodels==0.14.4
 tenacity==9.0.0
@@ -81,7 +90,9 @@ tensorflow==2.18.0
 tensorflow-io-gcs-filesystem==0.37.1
 termcolor==2.5.0
 threadpoolctl==3.5.0
+tifffile==2024.12.12
 tornado==6.4.2
+tqdm==4.67.1
 traitlets==5.14.3
 typing_extensions==4.12.2
 tzdata==2024.2
