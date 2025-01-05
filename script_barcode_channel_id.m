@@ -1,9 +1,10 @@
+
 input_dir = '/Users/zoemarquis/Documents/projet_industrie/projet_batteries/Data/' ;
 
 % Décommente un par un
 % input_filename = '2017-05-12_batchdata_updated_struct_errorcorrect.mat'; 
-% input_filename = '2017-06-30_batchdata_updated_struct_errorcorrect.mat';
-input_filename = '2018-04-12_batchdata_updated_struct_errorcorrect.mat';
+input_filename = '2017-06-30_batchdata_updated_struct_errorcorrect.mat';
+% input_filename = '2018-04-12_batchdata_updated_struct_errorcorrect.mat';
 
 % Créer le chemin complet vers le fichier
 file_path = fullfile(input_dir, input_filename);
@@ -59,10 +60,14 @@ if isfield(batch, 'barcode')
         
         % Vérifier si c'est un type string
         if isstring(barcode_data)
-            % Vérifier si le barcode commence par "EL150800"
-            if startsWith(barcode_data, "EL150800")
-                % Extraire la partie numérique après "EL150800"
-                numeric_part = extractAfter(barcode_data, "EL150800");
+            % Vérifier si le barcode commence par "EL150800" ou "el150800"
+            if startsWith(barcode_data, "EL150800") || startsWith(barcode_data, "el150800")
+                % Extraire la partie numérique après "EL150800" ou "el150800"
+                if startsWith(barcode_data, "EL150800")
+                    numeric_part = extractAfter(barcode_data, "EL150800");
+                else
+                    numeric_part = extractAfter(barcode_data, "el150800");
+                end
                 
                 % Convertir la partie numérique en entier
                 barcode_numeric = str2double(numeric_part);
@@ -73,21 +78,7 @@ if isfield(batch, 'barcode')
                     warning('Element %d : Conversion échouée pour barcode = %s', i, barcode_data);
                 end
             else
-                if startsWith(barcode_data, "el150800")
-                    % Extraire la partie numérique après "EL150800"
-                    numeric_part = extractAfter(barcode_data, "el150800");
-                    
-                    % Convertir la partie numérique en entier
-                    barcode_numeric = str2double(numeric_part);
-                    
-                    if ~isnan(barcode_numeric) % Vérifier si la conversion a réussi
-                        batch(i).barcode_numeric = int64(barcode_numeric); % Ajouter en tant qu'entier
-                    else
-                        warning('Element %d : Conversion échouée pour barcode = %s', i, barcode_data);
-                    end
-                else
-                    warning('Element %d : Barcode ne commence pas par "EL150800".', i);
-                end
+                warning('Element %d : Barcode ne commence ni par "EL150800" ni par "el150800".', i);
             end
         else
             warning('Element %d : barcode n''est pas un type chaîne.', i);
@@ -97,6 +88,7 @@ if isfield(batch, 'barcode')
 else
     disp('Le champ barcode n''existe pas dans la structure.');
 end
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
