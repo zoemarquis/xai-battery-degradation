@@ -15,4 +15,5 @@ __pycache__/
 
 # venv
 mon_venv/
+venv_python_3_10/
 data-driven-prediction-of-battery-cycle-life-before-capacity-degradation/
