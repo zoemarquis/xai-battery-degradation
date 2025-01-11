@@ -5,14 +5,13 @@ juste concaténer ces données au windowqui ont été créés et flatten
 
 
 
-- j'ai déterminé que la bonne tialle de fenetre a utilisé c'est ?w_?s
+- j'ai déterminé que la bonne tialle de fenetre a utilisé c'est 20w_5s
 
 
 Zoé : 
-- rf -> grid search ?
+- rf -> grid search ? (c'est peut etre lourd à faire) (peut etre qu'on dit par manque de temps on a pas fait de grid search là dessus ?)
 - 3 rf -> explicabilité
-- régression -> grid search (modèles TRES rapide)
-- régression : explicabilité 
+
 
 Charlotte :
 (OUBLIE PAS DE GENRE VENV ET REQUIREMENTS POUR LANCER LES NOTEBOOKS SUR LES BONS KERNEL)
@@ -25,3 +24,5 @@ mais le but c'est de prouver quantitativement qu'on a choisi correctement la tai
 
 
 - mettre en place le RNN (quel type de RNN ?) + explicabilité (et grid search si possible, puis explicabilité sur le modèle avec les meilleurs hyperparametres)
+
+- essayer LIME là où y a SHAP (pour avoir les 2 versions ?)
