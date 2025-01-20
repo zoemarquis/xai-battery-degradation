@@ -10,9 +10,11 @@ juste concaténer ces données au windowqui ont été créés et flatten
 
 
 Zoé : 
-- 3 rf -> explicabilité (repo github mail)
+- rapport : ce qui a été fait
+- explicabilité des modeles 
 - insérer db avec résultats de chaque modèle 
-- mettre en place le RNN (quel type de RNN ?) + explicabilité (et grid search si possible, puis explicabilité sur le modèle avec les meilleurs hyperparametres)
+- explicabilité 3D ? 
+- LSTM 
 
 
 Charlotte :
@@ -22,7 +24,6 @@ Charlotte :
 il y a beaucoup de commentaires sur ce que j'ai testé -> FAUT LES LAISSER
 (ça peut etre mis en markdown)
 mais le but c'est de prouver quantitativement qu'on a choisi correctement la taille des fenetres qu'on va utiliser dans nos autres notebooks 
-
 - est ce que tu peux faire un notebook où tu plot les performances des différents modèles ?
 
 
