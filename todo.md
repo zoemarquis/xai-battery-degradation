@@ -3,9 +3,7 @@
 
 
 Zoé : 
-- 8 : todo ça s'affiche plus 
 - rapport : ce qui a été fait
-- dernier todo
 - rapport : interpréter explicabilité
 - rapport : on a laissé le 9 -> essaie d'implémenter timeshap pour données 3D : CNN
 - rapport : mettre capture essaie de pyxai, qui a l'air mieux pour les modeles a ase d'arbre mais là j'arrive pas à le mettre correctement 
