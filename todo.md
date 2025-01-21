@@ -1,20 +1,12 @@
-TODO : puisqu'on a va flatten nos données
-ce serait bien de pas répéter les données des colonnes communes par window 
-genre le label de la window, etc 
-juste concaténer ces données au windowqui ont été créés et flatten 
-
-
-
 - j'ai déterminé que la bonne tialle de fenetre a utilisé c'est 20w_5s
 - faudra bien expliquer dans le rapport comment 
 
 
 Zoé : 
 - rapport : ce qui a été fait
-- explicabilité des modeles 
-- insérer db avec résultats de chaque modèle 
-- explicabilité 3D ? 
-- LSTM 
+- explicabilité XGBoost 
+- nettoyer nb 
+- 1 : TODO 
 
 
 Charlotte :
@@ -29,3 +21,6 @@ mais le but c'est de prouver quantitativement qu'on a choisi correctement la tai
 
 
 
+
+dans le rendu ne pas mettre archive, ni data-driven-prediciton...
+je peux mettreune partie de ce qu'il y a dans data et models 
