@@ -3,9 +3,6 @@
 
 
 Zoé : 
-- rapport : ce qui a été fait
-- rapport : interpréter explicabilité
-- rapport : on a laissé le 9 -> essaie d'implémenter timeshap pour données 3D : CNN
 - rapport : mettre capture essaie de pyxai, qui a l'air mieux pour les modeles a ase d'arbre mais là j'arrive pas à le mettre correctement 
 
 
